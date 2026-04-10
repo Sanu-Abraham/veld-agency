@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 | Veld</title>
+  <meta name="description" content="404 page not found - Veld Agency" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      position: relative;
+      padding: 30px;
+      overflow: hidden;
+    }
+
+    .error-page::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("assets/images/backgrounds/gradient.webp") center/cover no-repeat;
+      opacity: 0.35;
+      z-index: 1;
+    }
+
+    .error-page::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top, rgba(0,0,0,0.2), rgba(0,0,0,0.95));
+      z-index: 2;
+    }
+
+    .error-noise {
+      position: absolute;
+      inset: 0;
+      background: url("assets/images/backgrounds/noise.png");
+      opacity: 0.04;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .error-box {
+      position: relative;
+      z-index: 4;
+      width: 100%;
+      max-width: 780px;
+      padding: 50px 45px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 25px 70px rgba(0,0,0,0.65);
+      text-align: left;
+    }
+
+    .error-code {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 16px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+
+    .error-box h1 {
+      font-size: 58px;
+      line-height: 1.05;
+      margin-bottom: 18px;
+      letter-spacing: -1px;
+    }
+
+    .error-box p {
+      font-size: 15px;
+      line-height: 1.8;
+      max-width: 650px;
+      margin-bottom: 14px;
+    }
+
+    .error-hint {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+
+    .error-box a {
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      transition: 0.2s ease;
+    }
+
+    .error-hint a:hover {
+      color: rgba(255,255,255,0.95);
+      border-bottom-color: rgba(255,255,255,0.5);
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 16px;
+      background: rgba(255,255,255,0.7);
+      margin-left: 6px;
+      animation: blink 1s infinite;
+      transform: translateY(3px);
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+
+    @media (max-width: 600px) {
+      .error-box {
+        padding: 36px 26px;
+      }
+
+      .error-box h1 {
+        font-size: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="error-page">
+    <div class="error-noise"></div>
+
+    <div class="error-box">
+      <div class="error-code">You've ventured off the beaten path!</div>
+
+      <h1>404 Not Found ❌</h1>
+
+      <p>
+        This page doesn’t exist. Either the link is broken, or you just discovered
+        a hidden void inside the <b>VELD</b> system.
+      </p>
+
+      <p>
+        If you’re lost, don’t worry. We are a coding & design studio.
+        If you think this page deserves to exist, <a href="contact.html">let us know!</a>
+      </p>
+
+      <div class="error-hint">
+        <span>VELD // route not found // return to </span>
+        <a href="index.html">home</a>
+        <span class="cursor"></span>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
