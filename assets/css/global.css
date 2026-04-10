@@ -26,7 +26,6 @@
   --gradient: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -84,7 +83,6 @@ ul {
   padding: 90px 0;
 }
 
-/* Headings */
 h1, h2, h3, h4 {
   font-weight: 600;
   letter-spacing: -0.5px;
@@ -133,15 +131,23 @@ p {
   transform: translateY(-2px);
 }
 
-/* Navbar */
 .navbar {
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(11, 11, 12, 0);
-  backdrop-filter: blur(14px);
+  background: transparent;
   border-bottom: 1px solid var(--border);
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 11, 12, 0.85); 
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  z-index: -1;
 }
 
 .nav-container {
@@ -152,7 +158,7 @@ p {
 }
 
 .logo img {
-  height: 26px;
+  height: 18px;
 }
 
 .nav-links {
@@ -182,7 +188,6 @@ p {
   gap: 14px;
 }
 
-/* Hamburger */
 .hamburger {
   width: 44px;
   height: 44px;
@@ -204,7 +209,6 @@ p {
   border-radius: 5px;
 }
 
-/* Section Headers */
 .section-header {
   margin-bottom: 40px;
   max-width: 720px;
@@ -219,7 +223,6 @@ p {
   font-size: 16px;
 }
 
-/* Footer */
 .footer {
   padding: 70px 0 20px;
   border-top: 1px solid var(--border);
@@ -272,7 +275,6 @@ p {
   color: var(--muted);
 }
 
-/* Page Hero (Shared) */
 .page-hero {
   padding: 90px 0 60px;
 }
@@ -289,7 +291,6 @@ p {
   font-size: 16px;
 }
 
-/* Utility */
 .section-footer {
   margin-top: 35px;
 }
