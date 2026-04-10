@@ -1,0 +1,64 @@
+/* ================================
+   VELD - RESPONSIVE CSS
+================================ */
+
+@media (max-width: 950px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 75px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 75px);
+    background: rgba(11, 11, 12, 0.95);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    padding-top: 40px;
+    transition: 0.3s ease;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-actions .btn {
+    display: none;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .section-header h2 {
+    font-size: 32px;
+  }
+
+  .page-hero h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page-hero {
+    padding: 70px 0 45px;
+  }
+
+  .page-hero h1 {
+    font-size: 34px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}

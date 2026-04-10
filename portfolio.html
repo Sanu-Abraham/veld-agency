@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Veld</title>
+  <meta name="description" content="Explore Veld’s portfolio — design and development work crafted with taste and precision." />
+
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+
+  <div class="glow-bg"></div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo/logo.svg" alt="Veld Logo" />
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary">Let’s Talk</a>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Work crafted with taste and precision.</h1>
+      <p>
+        A collection of digital work designed with clarity, built with code,
+        and delivered with discipline.
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="section portfolio">
+    <div class="container">
+
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="websites">Websites</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+        <button class="filter-btn" data-filter="development">Development</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-item branding websites">
+          <img src="assets/images/portfolio/project-1.webp" alt="Project">
+          <div class="portfolio-overlay">
+            <h3>Project Name</h3>
+            <p>Branding / Website</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item uiux development">
+          <img src="assets/images/portfolio/project-2.webp" alt="Project">
+          <div class="portfolio-overlay">
+            <h3>Project Name</h3>
+            <p>UI/UX / Development</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item websites content">
+          <img src="assets/images/portfolio/project-3.webp" alt="Project">
+          <div class="portfolio-overlay">
+            <h3>Project Name</h3>
+            <p>Website / Content</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item ai development">
+          <img src="assets/images/portfolio/project-4.webp" alt="Project">
+          <div class="portfolio-overlay">
+            <h3>Project Name</h3>
+            <p>Generative AI / Product</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item branding uiux">
+          <img src="assets/images/portfolio/project-5.webp" alt="Project">
+          <div class="portfolio-overlay">
+            <h3>Project Name</h3>
+            <p>Branding / UI/UX</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item websites development">
+          <img src="assets/images/portfolio/project-6.webp" alt="Project">
+          <div class="portfolio-overlay">
+            <h3>Project Name</h3>
+            <p>Website / Development</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+
+      <div class="footer-brand">
+        <img src="assets/images/logo/logo.svg" alt="Veld Logo" class="footer-logo" />
+        <p>
+          Veld is a design & coding studio crafting modern websites and digital products
+          built for global standards.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a href="mailto:hello@veld.agency">hello@veld.agency</a>
+        <a href="contact.html">Start a Project</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Veld Agency. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/global.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/portfolio-filter.js"></script>
+
+</body>
+</html>

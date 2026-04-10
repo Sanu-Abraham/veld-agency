@@ -1,0 +1,145 @@
+/* ================================
+   VELD - CONTACT PAGE CSS
+================================ */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+  align-items: start;
+}
+
+/* Form Card */
+.contact-form-card,
+.contact-details-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+}
+
+.contact-form-card h2,
+.contact-details-card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.contact-form-card p,
+.contact-details-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  outline: none;
+  font-family: "Inter", system-ui, sans-serif;
+  transition: 0.2s ease;
+}
+
+.input-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: rgba(94, 234, 212, 0.35);
+}
+
+/* Form Status */
+.form-status {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+/* Contact Details */
+.contact-details {
+  display: grid;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.detail-item h4 {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.detail-item a,
+.detail-item p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.detail-item a:hover {
+  color: var(--text);
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 30px;
+}
+
+.social-links h4 {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 999px;
+  transition: 0.25s ease;
+}
+
+.social-links a:hover {
+  color: var(--text);
+  background: var(--accent-soft);
+  border-color: rgba(94, 234, 212, 0.3);
+}
+
+/* Map */
+.map-section h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.map-container {
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

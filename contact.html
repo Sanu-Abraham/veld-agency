@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Veld</title>
+  <meta name="description" content="Contact Veld to start your next project. Based in Malappuram, Kerala, India." />
+
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+
+  <div class="glow-bg"></div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo/logo.svg" alt="Veld Logo" />
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary">Let’s Talk</a>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Let’s create something worth remembering.</h1>
+      <p>
+        Tell us what you want to build. We’ll reply with clarity, direction, and next steps.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact">
+    <div class="container contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-card">
+        <h2>Send a Message</h2>
+        <p>Fill the form and we’ll get back to you as soon as possible.</p>
+
+        <form id="contactForm">
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="input-group">
+            <label for="company">Company / Brand (Optional)</label>
+            <input type="text" id="company" placeholder="Your brand name" />
+          </div>
+
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell us about your project..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+
+      <!-- CONTACT DETAILS -->
+      <div class="contact-details-card">
+        <h2>Contact Details</h2>
+        <p>You can also reach us directly through the following.</p>
+
+        <div class="contact-details">
+          <div class="detail-item">
+            <h4>Email</h4>
+            <a href="mailto:hello@veld.agency">hello@veld.agency</a>
+          </div>
+
+          <div class="detail-item">
+            <h4>WhatsApp</h4>
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank">Chat on WhatsApp</a>
+          </div>
+
+          <div class="detail-item">
+            <h4>Location</h4>
+            <p>Malappuram, Kerala, India</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <h4>Social</h4>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Behance</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="section map-section">
+    <div class="container">
+      <h2>Find Us</h2>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=Malappuram,+Kerala,+India&output=embed"
+          width="100%"
+          height="400"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+
+      <div class="footer-brand">
+        <img src="assets/images/logo/logo.svg" alt="Veld Logo" class="footer-logo" />
+        <p>
+          Veld is a design & coding studio crafting modern websites and digital products
+          built for global standards.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a href="mailto:hello@veld.agency">hello@veld.agency</a>
+        <a href="contact.html">Start a Project</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Veld Agency. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/global.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/contact-form.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* ================================
+   VELD - ABOUT PAGE CSS
+================================ */
+
+.about-story .two-column {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-story h2 {
+  font-size: 38px;
+}
+
+.about-story p {
+  margin-bottom: 16px;
+}
+
+/* Values */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.value-card {
+  position: relative;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  padding: 24px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  transition: 0.35s ease;
+}
+
+.value-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    120deg,
+    rgba(94, 234, 212, 0.14),
+    rgba(167, 139, 250, 0.12),
+    rgba(59, 130, 246, 0.10),
+    transparent
+  );
+
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.value-card:hover::before {
+  opacity: 1;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.05);
+
+  border-color: rgba(94, 234, 212, 0.25);
+
+  box-shadow:
+    0 0 35px rgba(94, 234, 212, 0.08),
+    0 0 60px rgba(167, 139, 250, 0.06),
+    0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.value-card * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.value-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 14px;
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.team-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card);
+  transition: 0.3s ease;
+}
+
+.team-card:hover {
+  background: var(--card-hover);
+  transform: translateY(-4px);
+}
+
+.team-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+}
+
+.team-info {
+  padding: 20px;
+}
+
+.team-info h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.team-info p {
+  font-size: 14px;
+}
+
+.team-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 20px 20px;
+}
+
+.team-links a {
+  font-size: 13px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 999px;
+  transition: 0.25s ease;
+}
+
+.team-links a:hover {
+  color: var(--text);
+  background: var(--accent-soft);
+  border-color: rgba(94, 234, 212, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+  .about-story .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
