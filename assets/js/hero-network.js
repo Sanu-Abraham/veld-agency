@@ -10,7 +10,7 @@ const canvas = document.getElementById("hero-network");
 
 if (canvas) {
   // Disable heavy animation on small devices (optional but recommended)
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 300) {
     canvas.style.display = "none";
   } else {
     const scene = new THREE.Scene();
